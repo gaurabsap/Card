@@ -1,0 +1,109 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.App{
+  width: 100%;
+  height: 10vh;
+}
+
+.box{
+  margin: 50px auto;
+  width: 30%;
+  height: 60vh;
+  /* background-color: lightcoral; */
+  background-color: white;
+  border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px black;
+  background-image: url('./rem.webp');
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
+}
+.box::-webkit-scrollbar{
+  display: none;
+}
+
+.box1{
+  width: 100%;
+  height: 50vh;
+  background-color: gold;
+  /* border: 1px solid red; */
+  position: relative;
+  top: 40px;
+  filter: blur(0.6px);
+}
+
+.box1:hover{
+  filter: blur(0px);
+}
+
+.box1::after{
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 8px;
+  width: 5px;
+  height: 5px;
+  background-color: rgb(0, 0, 0);
+}
+
+.box1::after{
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  width: 10px;
+  height: 5px;
+  background-color: rgb(0, 0, 0);
+}
+
+.box1 h3{
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 300;
+  padding: 5px;
+  letter-spacing: 10px;
+}
+
+.box2{
+  /* position: relative;
+  top: 20%; */
+  width: 100%;
+  height: 40vh;
+  background-color: lightblue;
+  margin-top: 10rem;
+  margin-bottom: 100px;
+}
+
+.boxes{
+  text-align: center;
+  width: 30%;
+  height: 23vh;
+  margin: 5px auto;
+  background-color: lightsalmon;
+  position: relative;
+  border: 1px solid red;
+  transition: all 0.8s;
+  visibility: hidden;
+
+}
+
+
+.box:hover .boxes{
+  display: block;
+  visibility: visible;
+}
+
+
+
+
+
+.cards{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
